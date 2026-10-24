@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Corporación Cedrela Internacional: desarrollo forestal, conservación ambiental, investigación y divulgación científica.">
+<title>Corporación Cedrela Internacional | Sembrando futuro</title>
+<style>
+:root{--forest:#123d32;--forest2:#1c5947;--leaf:#a6c95b;--cream:#f5f4ed;--ink:#1b2c27;--muted:#65746d;--white:#fff;--line:#dfe7df;--shadow:0 18px 45px rgba(18,61,50,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}.topline{height:5px;background:linear-gradient(90deg,var(--leaf),#e0c66a,var(--forest2))}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navrow{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand img{width:170px;height:auto;display:block}.nav{display:flex;align-items:center;gap:3px}.nav>a,.nav details>summary{padding:12px 10px;font-size:13px;font-weight:700;color:#29473d;cursor:pointer;list-style:none;border-radius:9px}.nav>a:hover,.nav details>summary:hover{background:#edf3e9;color:var(--forest)}.nav details{position:relative}.nav details summary::-webkit-details-marker{display:none}.nav details summary:after{content:"⌄";margin-left:5px;color:#7e9a51}.dropdown{position:absolute;top:100%;left:0;min-width:230px;background:white;border:1px solid var(--line);border-radius:12px;padding:8px;box-shadow:var(--shadow)}.dropdown a{display:block;padding:10px 12px;border-radius:8px;font-size:13px}.dropdown a:hover{background:#eff5e9}.nav .contact{background:var(--forest);color:white;padding:12px 17px}.menu-toggle{display:none;border:0;background:var(--forest);color:white;border-radius:8px;padding:10px 13px;font-size:18px}
+.hero{background:var(--forest);color:white;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,37,29,.91) 0%,rgba(8,37,29,.72) 48%,rgba(8,37,29,.18) 100%);z-index:1}.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%}.hero-content{position:relative;z-index:2;min-height:550px;display:flex;align-items:center;padding:78px 0}.hero-copy{max-width:680px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#d8eba7;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:800}.eyebrow:before{content:"";width:28px;height:2px;background:var(--leaf)}h1{font-size:clamp(2.6rem,6vw,5.1rem);line-height:1.02;letter-spacing:-.055em;margin:22px 0}.hero p{max-width:560px;color:#e2ece5;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:8px;font-weight:800;font-size:13px;transition:.2s}.btn-primary{background:var(--leaf);color:#173a2c}.btn-primary:hover{background:#c2dc7d;transform:translateY(-2px)}.btn-outline{border:1px solid rgba(255,255,255,.55);color:white}.btn-outline:hover{background:#fff;color:var(--forest)}
+.trustbar{background:#f1f4eb;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:25px 0}.trust-item{display:flex;align-items:center;gap:14px}.trust-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:13px;background:#dfeacb;color:var(--forest);font-size:21px;flex-shrink:0}.trust-item strong{display:block;font-size:14px}.trust-item span{font-size:12px;color:var(--muted)}
+section{padding:84px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}.kicker{color:#71913f;text-transform:uppercase;font-size:11px;font-weight:900;letter-spacing:.16em}h2{font-size:clamp(2rem,4vw,3.15rem);line-height:1.1;letter-spacing:-.04em;margin:9px 0 0;color:var(--forest)}.section-head p{max-width:490px;color:var(--muted);margin:0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.intro-photo{min-height:420px;border-radius:18px;overflow:hidden;position:relative;background:#e2e9db}.intro-photo img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block}.photo-note{position:absolute;bottom:18px;left:18px;right:18px;background:rgba(255,255,255,.94);padding:16px 18px;border-radius:12px;font-size:13px;font-weight:700}.intro-copy p{color:var(--muted)}.intro-copy .btn{margin-top:12px;background:var(--forest);color:white}
+.achievements{background:var(--cream)}.achievement-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.achievement{background:white;padding:28px;border-radius:15px;border:1px solid #e6e9df;transition:.2s}.achievement:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.achievement .num{font-size:35px;color:#779748;font-weight:900;letter-spacing:-.05em}.achievement h3{margin:8px 0;color:var(--forest);font-size:18px}.achievement p{font-size:14px;color:var(--muted);margin:0}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{padding:22px;border:1px solid var(--line);border-radius:13px;background:white}.service-icon{font-size:26px}.service h3{font-size:16px;color:var(--forest);margin:12px 0 7px}.service p{font-size:13px;color:var(--muted);margin:0}
+.publications{background:#123d32;color:white}.publications h2{color:white}.publications .section-head p{color:#c8d9ce}.pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.pub-card{background:#1b4a3c;border:1px solid rgba(255,255,255,.13);border-radius:15px;overflow:hidden}.pub-cover{height:210px;overflow:hidden;background:#e5eadc}.pub-cover img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.pub-card:hover .pub-cover img{transform:scale(1.04)}.pub-body{padding:21px}.pub-type{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:#d4e6a5;font-weight:800}.pub-body h3{font-size:18px;line-height:1.3;margin:9px 0}.pub-body p{font-size:13px;color:#d2e0d7}.pub-link{font-size:12px;color:#d4e6a5;font-weight:800}.pub-link:hover{text-decoration:underline}.pub-bottom{margin-top:26px}
+.cta{padding:55px 0;background:#eaf0df}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:24px}.cta h2{font-size:clamp(1.7rem,3vw,2.6rem);max-width:620px}.cta p{color:var(--muted);margin-bottom:0}.cta .btn{background:var(--forest);color:white;white-space:nowrap}
+footer{background:#0b2b23;color:#d3e1d7;padding:50px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}.footer-logo{width:160px;background:white;border-radius:7px;padding:7px}.footer-grid p,.footer-grid a{font-size:13px;color:#c1d2c7}.footer-grid h3{color:white;font-size:13px;text-transform:uppercase;letter-spacing:.12em}.footer-links{display:grid;gap:8px}.copyright{border-top:1px solid rgba(255,255,255,.15);margin-top:35px;padding-top:18px;font-size:11px;color:#9fb6a8;display:flex;justify-content:space-between;gap:12px}
+@media(max-width:980px){.menu-toggle{display:block}.nav{display:none;position:absolute;top:88px;left:0;right:0;padding:14px 4%;background:white;border-bottom:1px solid var(--line);align-items:stretch;flex-direction:column;box-shadow:var(--shadow)}.nav.open{display:flex}.nav details{width:100%}.dropdown{position:static;box-shadow:none;margin:4px 0 8px}.nav>a,.nav details>summary{display:block}.trust-grid{gap:12px}.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.hero-content{min-height:520px;padding:65px 0}.hero p{font-size:16px}.trust-grid{grid-template-columns:1fr;gap:18px}.section-head{display:block}.section-head p{margin-top:14px}.intro-grid{grid-template-columns:1fr;gap:30px}.intro-photo,.intro-photo img{min-height:300px}.achievement-grid,.pub-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr 1fr}.cta-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:25px}.copyright{flex-direction:column}.brand img{width:145px}}
+@media(max-width:420px){.services-grid{grid-template-columns:1fr}.actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap navrow">
+    <a class="brand" href="https://www.cedrela.org/" aria-label="Cedrela, inicio"><img src="https://static.wixstatic.com/media/f0874c_1bb4d0405bb44b32b0483a467b0af6e2~mv2.png/v1/crop/x_7%2Cy_0%2Cw_1365%2Ch_712/fill/w_163%2Ch_85%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Logo_Oficial%20Cedrela.png" alt="Logo oficial Corporación Cedrela Internacional"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" onclick="const n=document.querySelector('.nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">☰</button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="https://www.cedrela.org/">Inicio</a>
+      <details><summary>Presentación</summary><div class="dropdown"><a href="https://www.cedrela.org/presentacion">Presentación institucional</a><a href="https://www.cedrela.org/mision">Misión</a><a href="https://www.cedrela.org/vision">Visión</a><a href="https://www.cedrela.org/objetivos">Objetivos</a></div></details>
+      <a href="https://www.cedrela.org/equipo">Equipo</a>
+      <details><summary>Aliados</summary><div class="dropdown"><a href="https://www.cedrela.org/aliados">Aliados estratégicos</a><a href="https://www.cedrela.org/sedes">Sedes</a><a href="https://www.cedrela.org/proyectos-en-colombia">Experiencias en Colombia</a></div></details>
+      <a href="https://www.cedrela.org/servicios">Servicios</a>
+      <details><summary>Casa Editorial</summary><div class="dropdown"><a href="https://www.cedrela.org/blank">Publicaciones</a><a href="https://www.cedrela.org/eventos">Eventos</a></div></details>
+      <a class="contact" href="https://www.cedrela.org/contacto">Contacto ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <img class="hero-image" src="https://static.wixstatic.com/media/f0874c_02136b585aa84e38b05bef8e92b56a56~mv2.jpg/v1/fill/w_1600%2Ch_1000%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/f0874c_02136b585aa84e38b05bef8e92b56a56~mv2.jpg" alt="Paisaje natural de Colombia">
+    <div class="wrap hero-content"><div class="hero-copy">
+      <span class="eyebrow">Corporación Cedrela Internacional</span>
+      <h1>Conservar la naturaleza.<br>Sembrar futuro.</h1>
+      <p>Impulsamos el desarrollo forestal, la investigación y la conservación del medio ambiente con conocimiento científico, trabajo territorial y compromiso con las comunidades.</p>
+      <div class="actions"><a class="btn btn-primary" href="https://www.cedrela.org/presentacion">Conoce la Corporación ↗</a><a class="btn btn-outline" href="https://www.cedrela.org/servicios">Explorar servicios</a></div>
+    </div></div>
+  </section>
+  <div class="trustbar"><div class="wrap trust-grid">
+    <div class="trust-item"><div class="trust-icon">⌁</div><div><strong>Conservación y restauración</strong><span>Soluciones para proteger los ecosistemas</span></div></div>
+    <div class="trust-item"><div class="trust-icon">◎</div><div><strong>Ciencia aplicada</strong><span>Investigación, datos y conocimiento</span></div></div>
+    <div class="trust-item"><div class="trust-icon">♧</div><div><strong>Trabajo con comunidades</strong><span>Participación y desarrollo sostenible</span></div></div>
+  </div></div>
+  <section><div class="wrap intro-grid">
+    <div class="intro-photo"><img src="https://static.wixstatic.com/media/f0874c_02136b585aa84e38b05bef8e92b56a56~mv2.jpg/v1/fill/w_880%2Ch_660%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/f0874c_02136b585aa84e38b05bef8e92b56a56~mv2.jpg" alt="Entorno natural colombiano"><div class="photo-note">Conocimiento del territorio para construir un futuro sostenible.</div></div>
+    <div class="intro-copy"><span class="kicker">Quiénes somos</span><h2>Conocimiento que se convierte en acción.</h2><p>La Corporación Cedrela Internacional es una organización no gubernamental sin ánimo de lucro con sede en Bogotá, conformada por un equipo interdisciplinario de profesionales de las ciencias biológicas, la ingeniería, la tecnología, la academia y las ciencias sociales.</p><p>Integramos experiencia técnica, innovación y participación local para desarrollar proyectos de conservación, planificación territorial, gestión de especies amenazadas y desarrollo comunitario.</p><a class="btn" href="https://www.cedrela.org/presentacion">Conoce nuestra historia ↗</a></div>
+  </div></section>
+  <section class="achievements"><div class="wrap">
+    <div class="section-head"><div><span class="kicker">Nuestro aporte</span><h2>Experiencia con impacto</h2></div><p>Una trayectoria que conecta conocimiento especializado, trabajo de campo y divulgación para aportar a la conservación de la biodiversidad.</p></div>
+    <div class="achievement-grid">
+      <article class="achievement"><div class="num">20+ años</div><h3>Experiencia profesional</h3><p>El equipo cuenta con más de dos décadas de experiencia en recursos naturales y gestión de proyectos ambientales.</p></article>
+      <article class="achievement"><div class="num">Colombia</div><h3>Trabajo en territorio</h3><p>Proyectos y procesos que vinculan pobladores locales en capacitación, sensibilización e investigación.</p></article>
+      <article class="achievement"><div class="num">Ciencia</div><h3>Conocimiento publicado</h3><p>Producción y divulgación de materiales científicos, técnicos y tecnológicos en ciencias biológicas, forestales, sociales y ambientales.</p></article>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <div class="section-head"><div><span class="kicker">Qué hacemos</span><h2>Soluciones para el territorio</h2></div><p>Servicios especializados que combinan análisis técnico, herramientas tecnológicas y una visión integral del ambiente.</p></div>
+    <div class="services-grid">
+      <article class="service"><div class="service-icon">🌱</div><h3>Estudios de impacto ambiental</h3><p>Evaluación y gestión de impactos para proyectos responsables.</p></article>
+      <article class="service"><div class="service-icon">🦋</div><h3>Especies amenazadas</h3><p>Investigación y acciones para la conservación de flora y fauna.</p></article>
+      <article class="service"><div class="service-icon">🤝</div><h3>Trabajo social comunitario</h3><p>Participación local, formación y desarrollo comunitario.</p></article>
+      <article class="service"><div class="service-icon">🗺️</div><h3>Cartografía y SIG</h3><p>Información geográfica y herramientas para apoyar decisiones.</p></article>
+      <article class="service"><div class="service-icon">🌳</div><h3>Inventarios de biodiversidad</h3><p>Caracterización y documentación de recursos naturales.</p></article>
+      <article class="service"><div class="service-icon">🏞️</div><h3>Planificación territorial</h3><p>Gestión de áreas protegidas y planificación del territorio.</p></article>
+      <article class="service"><div class="service-icon">💻</div><h3>Tecnología y comunicaciones</h3><p>Soluciones digitales, cartografía y bases de datos asociadas.</p></article>
+      <article class="service"><div class="service-icon">📚</div><h3>Divulgación científica</h3><p>Publicaciones, formación y espacios de intercambio de conocimiento.</p></article>
+    </div>
+    <div style="margin-top:25px"><a class="btn" style="background:var(--forest);color:white" href="https://www.cedrela.org/servicios">Ver todos los servicios ↗</a></div>
+  </div></section>
+  <section class="publications"><div class="wrap">
+    <div class="section-head"><div><span class="kicker">Casa Editorial Cedrela</span><h2>Publicaciones que dejan huella</h2></div><p>Libros y materiales especializados para compartir el conocimiento sobre la biodiversidad, la historia natural y el territorio colombiano.</p></div>
+    <div class="pub-grid">
+      <article class="pub-card"><div class="pub-cover"><img src="https://static.wixstatic.com/media/f0874c_203269efa46c406f89b2938c3b114b74~mv2.png/v1/fill/w_445%2Ch_307%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/Portda_Volumen%20I_Contracara.png" alt="Portada oficial de publicación de Cedrela"></div><div class="pub-body"><span class="pub-type">Libro · Investigación</span><h3>Historia botánica del Orinoco de Colombia</h3><p>Una mirada documentada a las expediciones, investigadores y aportes que han contribuido al conocimiento de la flora del Orinoco.</p><a class="pub-link" href="https://www.cedrela.org/historia-orinoco-colombia">Conocer publicación ↗</a></div></article>
+      <article class="pub-card"><div class="pub-cover"><img src="https://static.wixstatic.com/media/f0874c_4070a2c6ac4642e18dda61f15c91d6fd~mv2.png/v1/fill/w_445%2Ch_307%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/Portada%20Cedrela%20II.png" alt="Portada oficial de publicación Cedrela II"></div><div class="pub-body"><span class="pub-type">Casa Editorial</span><h3>Conocimiento técnico y científico</h3><p>Materiales para la difusión de conocimientos biológicos, forestales, sociales y ambientales.</p><a class="pub-link" href="https://www.cedrela.org/blank">Explorar publicaciones ↗</a></div></article>
+      <article class="pub-card"><div class="pub-cover"><img src="https://static.wixstatic.com/media/f0874c_02136b585aa84e38b05bef8e92b56a56~mv2.jpg/v1/fill/w_880%2Ch_660%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/f0874c_02136b585aa84e38b05bef8e92b56a56~mv2.jpg" alt="Paisaje asociado al trabajo ambiental"></div><div class="pub-body"><span class="pub-type">Eventos y divulgación</span><h3>Compartir conocimiento, crear alianzas</h3><p>Encuentros y espacios de intercambio con expertos nacionales e internacionales.</p><a class="pub-link" href="https://www.cedrela.org/eventos">Ver eventos ↗</a></div></article>
+    </div>
+    <div class="pub-bottom"><a class="btn btn-primary" href="https://www.cedrela.org/blank">Ver todas las publicaciones ↗</a></div>
+  </div></section>
+  <section class="cta"><div class="wrap cta-inner"><div><span class="kicker">Construyamos juntos</span><h2>¿Tienes un proyecto ambiental o una alianza en mente?</h2><p>Conversemos sobre cómo aportar conocimiento y soluciones al territorio.</p></div><a class="btn" href="https://www.cedrela.org/contacto">Contactar a Cedrela ↗</a></div></section>
+</main>
+<footer><div class="wrap">
+  <div class="footer-grid">
+    <div><img class="footer-logo" src="https://static.wixstatic.com/media/f0874c_1bb4d0405bb44b32b0483a467b0af6e2~mv2.png/v1/crop/x_7%2Cy_0%2Cw_1365%2Ch_712/fill/w_163%2Ch_85%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Logo_Oficial%20Cedrela.png" alt="Logo Corporación Cedrela"><p>Desarrollo forestal y conservación del medio ambiente.<br><strong>Sembrando futuro.</strong></p></div>
+    <div><h3>Explora</h3><div class="footer-links"><a href="https://www.cedrela.org/presentacion">Presentación</a><a href="https://www.cedrela.org/equipo">Equipo</a><a href="https://www.cedrela.org/servicios">Servicios</a><a href="https://www.cedrela.org/proyectos-en-colombia">Experiencias en Colombia</a></div></div>
+    <div><h3>Conocimiento</h3><div class="footer-links"><a href="https://www.cedrela.org/blank">Publicaciones</a><a href="https://www.cedrela.org/eventos">Eventos</a><a href="https://www.cedrela.org/contacto">Contacto</a><a href="https://www.cedrela.org/">Sitio oficial actual ↗</a></div></div>
+  </div>
+  <div class="copyright"><span>© Corporación Cedrela Internacional. Propuesta de rediseño visual.</span><span>Las imágenes institucionales se cargan desde el sitio oficial de Cedrela.</span></div>
+</div></footer>
+</body></html>
